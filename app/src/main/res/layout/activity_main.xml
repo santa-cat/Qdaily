@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.santa.myapplication.MainActivity">
+
+    <com.example.santa.myapplication.PullRefreshLayout
+        android:id="@+id/pullRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:default_height="0dp"
+        app:max_height="80dp"
+        app:min_height="0dp">
+
+        <com.example.santa.myapplication.SunRefreshView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <!--<com.example.santa.myapplication.RedHareRefreshView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"/>-->
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/mainlistview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </com.example.santa.myapplication.PullRefreshLayout>
+    <!--<include layout="@layout/content_main" />-->
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_gravity="bottom|start"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@android:drawable/ic_menu_manage" />
+
+    <!--<ImageView-->
+        <!--android:id="@+id/image"-->
+        <!--android:layout_width="100dp"-->
+        <!--android:layout_height="100dp" />-->
+
+    <!--<TextView-->
+        <!--android:layout_width="300dp"-->
+        <!--android:layout_height="300dp"-->
+        <!--android:text="Q"-->
+        <!--android:textSize="200sp"-->
+        <!--android:background="@drawable/design_point"-->
+        <!--android:gravity="center"-->
+        <!--/>-->
+</RelativeLayout>

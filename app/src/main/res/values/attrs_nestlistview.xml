@@ -1,0 +1,8 @@
+<resources>
+
+    <declare-styleable name="NestListView">
+        <attr name="nlv_header_text" format="string" />
+    </declare-styleable>
+
+
+</resources>
