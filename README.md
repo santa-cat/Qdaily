@@ -1,4 +1,4 @@
-# Qdaily
+# Qdaily - 刚接触Android写的demo
 简单模仿好奇心日报，主界面和设置页面<br/><br/><br/>
 
 *主界面，循环播放viewgroup，支持前后滑动。<br/>
